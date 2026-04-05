@@ -6,6 +6,23 @@ A comprehensive Django-based backend for financial record management, featuring 
 ## 🚀 Quick Access
 - **Welcome API (Root)**: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 - **Interactive Swagger Docs**: [http://127.0.0.1:8000/api/docs/](http://127.0.0.1:8000/api/docs/)
+- **OpenAPI Specification**: `schema.yml` (located in root folder)
+
+> [!TIP]
+> **Standalone Documentation**: I have included a standalone `schema.yml` (OpenAPI Spec) in the repository root. This file can be imported into tools like [Swagger Editor](https://editor.swagger.io/) or Postman to view the full API documentation offline.
+>
+> **Spec Glimpse:**
+> ```yaml
+> openapi: 3.0.3
+> info:
+>   title: Finance Backend API
+>   version: 1.0.0
+>   description: A comprehensive Django-based backend for financial record management.
+> paths:
+>   /api/auth/login/:
+>     post:
+>       summary: Unified login (Email, Mobile, App ID, Membership ID)
+> ```
 - **Admin Panel**: [http://127.0.0.1:8000/admin/](http://127.0.0.1:8000/admin/)
 
 ## Core Flow & Logic
